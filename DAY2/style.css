@@ -1,0 +1,38 @@
+body {
+ background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+ div {
+    border: 2px solid #f0f0f0;
+    border: radius 10px;
+}
+
+h1 {
+     color: solid black;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 10px;
+        }
+
+        h2 {
+            margin: 10px;
+        }
+
+        nav {
+            display: block;
+            color: red;
+            text-align: center;
+            padding: 20px;
+            margin: 2px;
+            background-color: lightblue;
+        }
+.para{
+    font-size: 20px;
+    color: blue;
+
+}
+#nav{
+    display: flex;
+    justify-content: space-around;
+}
