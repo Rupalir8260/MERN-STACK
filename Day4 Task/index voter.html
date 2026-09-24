@@ -7,18 +7,12 @@
 </head>
 <body>
  <h2>CHECK VOTERS</h2>
- <input type="text" id="age" placeholder="Enter your age">
- <button onclick="checkvote()">Check Eligibility</button>
-<script>
-  let checkvote=()=>{
-    let age = document.getElementById("age").value;
-  if(age>=18){
-    alert("you are eligible to vote");
-  }
-  else{
-    alert("you are not eligible to vote!");
-  }}
+ <input type="number" id="age" placeholder="Enter your age">
+ <button onclick="promptAlert()"> check</button">
+
+<script src="voterscript.js">
+  
   </script>
-    
+
 </body>
 </html>

@@ -12,9 +12,17 @@
         <fieldset class="border p-5 rounded-xl px-4 border-[#ccc]">
               <legend class="text-lg font-semibold">User Information</legend>
     <label for="Name">First Name</label> 
-    <input type="text" class="border p-2 rounded-xl px-4 border-[#ccc]" id="fname" name="fname" value="Name"><br>
-    <input class="border p-2 rounded-xl px-4 bg-black text-white mt-10" type= "submit" value="submit"><br>
-    </form>
+    <h2 id="changeable" class="my-4 text-sm font-semibold italic">Welcome 👋</h2>
+    <input type="text" class="border p-2 rounded-xl px-4 border-[#ccc]" id="fname" name="fname" placeholder="Name"><br>
+    <button class="border p-2 rounded-xl px-4 capitalize bg-black text-white mt-4" type="button"onclick="promptsayhi()">click</button">
+        <br>
+        <button class="border p-2 rounded-xl px-4 bg-rose-500 capitalize text-white mt-4" type="button"onclick="promptReset()">Reset</button">
+    
+        <br>
+        <button class="border p-2 rounded-xl px-4 bg-blue-500 capitalize text-white mt-4" type="button"onclick="promptAlert()">Alert</button">
+    
 
+</form>
+<script src="./script.js"></script>
 </body>
 </html>

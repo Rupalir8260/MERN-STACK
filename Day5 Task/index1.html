@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interactive </title>
+    <link rel="stylesheet" href="./stylish.css">
+</head>
+<body>
+    <section>
+        <h2 id="colorText">Demo text</h2>
+        <div>
+            
+            <button onclick="colorChange('red')">Red</button>
+            <button onclick="colorChange('Green')">Green</button>
+            <button onclick="colorChange('Blue')">Blue</button>
+            <button onclick="colorChange('black')">RESART</button>
+        </div>
+    </section>
+    <section>
+        <h2 id="fontfamilyy">FONT FAMILY</h2>
+        <div>
+            <select onchange="fontchange()" id="Changevalue">
+            <option value="TimesNewRoman">Time New Roman</option>
+            <option value="Arial">Arial</option>
+            <option value="sansSerif">sans</option>
+            <option value="Monospace">Monospace</option>
+            </select>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
