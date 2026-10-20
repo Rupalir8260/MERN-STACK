@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    font-family: Arial, sans-serif;
+}
+.calci{
+    position: relative;
+}
+#operator{
+    color:rgb(174, 73, 0);
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    font-size: 20px;
+    background-color: rgba(72, 72, 72, 0.253);
+    width: 20px;
+    text-align: center;
+    border-radius: 50%;
+}
+.calci input{
+    font-weight: 600;
+    border:2px solid black;
+    border-radius:15px;
+}
+.calculator {
+    width: 400px;
+    /* height: 380px; */
+    padding: 25px;
+    background-color:rgba(255, 182, 193, 0.849);
+    border: 2px solid rgb(199, 154, 6);
+    border-radius: 15px;
+    row-gap: 7px;
+    column-gap: 8px;
+}
+
+.calculator h2 {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: black;
+    gap: 4px;
+    
+}
+
+#display {
+    padding: 20px 4px;
+    border: transparent;
+    text-align: right;
+    width: 100%;
+    background-color:rgba(247, 244, 244, 0.765);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:65px;
+    /* padding:25px 0px; */
+    border-radius: 50%;
+    aspect-ratio: 1;
+    background-color:rgba(255, 255, 255, 0.742);
+    color: black;
+    border: transparent;
+    font-size: 20px;
+}
+button:hover{
+    background-color: rgba(255, 255, 255, 0.244);
+    cursor: pointer;
+
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    gap: 12px;
+    row-gap: 40px;
+    /* column-gap: 8px; */ 
+    grid-auto-rows: 35px;
+    margin-bottom: 15px;
+    margin: 4px;
+    height:360px;
+   margin-top:20px;
+    
+}
+
+.buttons {
+    font-weight: 600;  
+    font-size: 20px;  
+}
+
+
+.equal{
+    background-color:rgba(247, 109, 130, 0.849);
+    font-size: large;
+
+}
+.equal:hover{
+    background-color:orange;
+}
+
+

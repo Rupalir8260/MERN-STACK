@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to left, rgb(169, 60, 169),rgb(92, 6, 92),rgb(36, 2, 36));
+    font-family: 'poppins', sans-serif;
+    color: white;
+    font-size: 15px;
+    transition: 0.3s;
+    animation:forwards;
+}
+
+nav {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: underline;
+    background-color: rgb(69, 17, 69);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(46, 4, 46);
+    font-size: 1.2rem;
+}
+.scrolled{background: blue;
+box-shadow:black;
+}
+       
+nav li {
+    list-style: none;
+    margin: 0 25px;
+}
+
+main hr {
+    border: 0;
+    background: rgb(99, 16, 99);
+    height:2.5px;
+    margin: 80px 60px;
+    margin-top:20vh; 
+    line-height:90px;
+    
+}
+
+.logo {
+    font-size: 2rem;
+    margin: 0 23px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.home {
+    display: flex;
+     font-weight: 500;
+    align-items: center;
+    
+    height: 60vh;
+    width:90dvw;
+}
+.header-left{
+    
+    width: 50%;
+    align-items:center;
+    margin-left: 80px;
+    font-size:35px;
+    
+}
+.para{
+    font-size:20px;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.833);
+}
+.header-right{
+    display: flex;
+     justify-content:center;
+     height:500px;
+    width: 50%;
+    margin-top:10%;
+    border-radius: 50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    
+}
+.header-right img:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.section2 div {
+    max-width: 80vw;
+    text-align: start;
+    height: 45vh;
+    
+}
+/* section2 About me */
+.section2 {
+    padding: 0px 100px;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:15px;
+    font-family:'Times New Roman';
+     display: grid;
+     height: 90%;
+     padding:10vh 0px;
+}
+.text-about{
+    display:flex;
+    flex: 1;
+    font-family:'Times New Roman';
+    justify-content:end;
+    align-items:flex-end;
+    line-height: 1.5;
+    max-width: 100%;
+}
+.img2{
+    display: flex; 
+    justify-content:start;
+    height:300px;
+    width: 50%;
+    object-fit:cover;
+    align-items:center;
+    flex:auto; 
+    padding:30px;
+    
+
+}
+.text {
+    display: flex;
+    color:white;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    height:90%;
+    justify-content:start;
+    margin-left:80px;
+    margin-bottom:auto;
+}
+.skills-list{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    size: 40vh;
+    height:50px;
+    width:500px;
+    gap: 40px;
+    border-radius:40px;
+    margin-top:40vh;
+    margin-bottom:40px;
+   justify-content:start;
+}
+#hr-skills{
+    height:2px;
+    margin:400px;
+    background: rgb(99, 16, 99);
+    height:2px;
+   
+}
+.footer{
+    justify-content:center;
+  padding-top:10vh;
+    font-size:20px;
+    padding: 100px 50px;
+    position: relative;
+
+}
+.footer-head{
+    display: flex;
+    justify-content:flex-end;
+    margin-top: 10px;
+    margin-left: 90px;
+    justify-content:start;
+    font-size:40px;
+    font-family:'Times New Roman', Times, serif;
+}
+.footer-container{
+    max-width: 800p;
+    line-height:70px;
+   justify-content: center;
+   color: white;
+}
+.footer-links{
+    color: rgb(67, 43, 223);
+    margin-left: 40px;
+}
+.footer-links a{
+     font-size: 18px;
+     margin: 20px;
+   
+}
+.footer-links a:hover{
+    color: white;
+
+}
+.footer-icons a{
+    color:white;
+    font-size: 22px;
+    margin: 0 10px;
+    
+}
+.footer-icons a:hover{
+    color:blueviolet;
+
+}
+.copyright{
+    font-size: 14px;
+}
+#back-to-top{
+    display: none;
+    position: fixed;
+    bottom: 12px;
+    right: 20px;
+    padding: 12px;
+    cursor: pointer;
+    z-index: 1000;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Random User Fetcher</title>
+<style>
+body {
+font-family: 'Poppins', sans-serif;
+text-align: center;
+background-color: #f8f9fa;
+}
+.user-card {
+margin: 40px auto;
+padding: 20px;
+width: 250px;
+background: rgba(6, 80, 126, 0.912);
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.004);
+border-radius: 12px;
+color:white;
+}
+img {
+width: 100px;
+height: 100px;
+border-radius: 50%;
+}
+button {
+margin-top: 15px;
+padding: 10px 20px;
+border: none;
+background-color: #0a4787d5;
+color: white;
+border-radius: 6px;
+cursor: pointer;
+}
+button:hover {
+background-color: #159df1;
+}
+</style>
+</head>
+<body>
+
+<h1> Random User Generator</h1>
+<div class="user-card" id="userCard">
+<p>Click the button to load user data.</p>
+</div>
+<button id="loadBtn">Fetch Random User</button>
+
+<script>
+const btn = document.getElementById('loadBtn');
+const userCard = document.getElementById('userCard');
+btn.addEventListener('click', async () => {
+try {
+const res = await fetch("https://randomuser.me/api/");
+const data = await res.json();
+const user = data.results[0];
+
+userCard.innerHTML = `
+<img src="${user.picture.large}" alt="User Photo">
+<h3>${user.name.first} ${user.name.last}</h3>
+<p>${user.email}</p>
+`;
+} catch (error) {
+userCard.innerHTML = `<p style="color:red;">Error fetching data </p>`;
+}
+});
+</script>
+
+</body>
+</html>

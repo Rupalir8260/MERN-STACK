@@ -1,0 +1,30 @@
+*{
+    margin:200;
+}
+h2{
+    font-family: arial;
+    font: size 50px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:lightgoldenrodyellow;
+    font-family: arial;
+    font-size: large;
+    justify-content: center;
+}
+#username{
+width: 400px;
+height: 2rem;
+border: none;
+}
+.labels{
+    width: 400px;
+height: 2rem;
+border: none;
+}
+#validation{
+    font-size:2rem;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form Validation </title>
+    <link rel="stylesheet" href="./D5style.css">
+
+</head>
+<body>
+    <header>
+          <h2 id="validation">FORM</h2>
+    </header>
+<section>
+<form id="validationForm"></form>
+  
+<label id = "username"for="name"> Name:</label>
+<input class="labels" type="text" id="name" name="name"placeholder="name" autocomplete="off"><br><br>
+
+<label for="email">Email:</label>
+<input class="labels" type="email" id="email" name="email" placeholder="enter email" autocomplete="off"><br><br>
+
+<label for="password">Password:</label>
+<input class="lables" type="password" id="password" name ="password" placeholder="enter password" autocomplete="off"><br><br>
+
+<button id="subbtn" type="submit" onclick="validationForm()">Submit</button>
+<button id="resetbtn" type="reset">Reset</button>
+<br><br>
+ 
+</form>
+</section>
+<script src="./script2.js"></script>
+    
+</body>
+</html>

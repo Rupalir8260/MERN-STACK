@@ -18,16 +18,33 @@
         </div>
     </section>
     <section>
-        <h2 id="fontfamilyy">FONT FAMILY</h2>
+        <h2 id="fontfamily">FONT FAMILY</h2>
         <div>
             <select onchange="fontchange()" id="Changevalue">
             <option value="TimesNewRoman">Time New Roman</option>
             <option value="Arial">Arial</option>
             <option value="sansSerif">sans</option>
             <option value="Monospace">Monospace</option>
-            </select>
+        </select>
         </div>
     </section>
+    <section>
+        <h2 id="fontSize"> FONT-SIZE</h2>
+        <div>
+            <button onclick="increaseSize()">A+</button>
+            <button onclick="decreaseSize()">A-</button>
+            <button onclick="resetSize()">RESET</button>
+        </div>
+    </section>
+    <section>
+        <h2 id="fontStyle">FONT-STYLE</h2>
+        <div>
+            <button id="boldbtn">BOLD</button>
+            <button id="italicbtn">ITALIC</button>
+            <button id="underlinebtn">UNDERLINE</button>
+        </div>
+    
+    </section>
     <script src="./script.js"></script>
-</body>
+</body>  
 </html>

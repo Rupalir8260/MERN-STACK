@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple form</title>
+    <link rel="stylesheet" href="ex6.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Student Form</h2>
+
+        <form id="studentForm">
+        <label for="title">Title:</label>
+        <input type="text" id="title" placeholder="Enter title" required>
+
+        <label for="body">Message:</label>
+        <textarea id="body" placeholder="Enter your message" required></textarea>
+
+        <label for="userId">User ID:</label>
+        <input type="number" id="userId" value="1" min="1" required>
+
+     <button type="submit" id="submitBtn">Submit</button>
+    </form>
+    <script src="example6.js"></script>
+</body>
+</html>
