@@ -1,0 +1,43 @@
+import { useEffect, useState } from "react";
+
+function Posts() {
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    async function fetchPosts() {
+     try {
+        const res = await fetch(
+          "https://jsonplaceholder.typicode.com/posts"
+    );
+    if (!res.ok) {
+          throw new Error("Failed to fetch posts");
+    }
+    const data = await res.json();
+        setPosts(data.slice(0, 10));
+      } catch (error) {
+        console.error(error);
+    }
+}
+   fetchPosts();
+    }, []);
+    return (
+    <div style={{ padding: "20px" }}>
+      <h2>Posts</h2>
+      {posts.map((p) => (
+      <div key={p.id} style={box}>
+          <h3>{p.title}</h3>
+          <p>{p.body}</p>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+const box = {
+  padding: "10px",
+  border: "1px solid black",
+  marginBottom: "10px",
+  borderRadius: "5px",
+};
+
+export default Posts;

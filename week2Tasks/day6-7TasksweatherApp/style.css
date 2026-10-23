@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: linear-gradient(135deg, #ea66e3, #764ba2);
+    transition: 0.5s ease;
+}
+
+.weather-app {
+    width: 100%;
+    max-width: 440px;
+    padding: 30px 24px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    margin-bottom: 25px;
+    color: #f0f0f0;
+}
+
+#weatherForm {
+    display: flex;
+    gap: 10px;
+}
+
+#cityInput {
+    flex: 1;
+    min-width: 0;
+    padding: 13px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+#searchBtn {
+    padding: 13px 16px;
+    border: none;
+    border-radius: 10px;
+    background: #ffcb57;
+    color: #252525;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#searchBtn:hover {
+    background: #ffdc86;
+}
+
+#searchBtn:disabled {
+    opacity: 0.7;
+    cursor: wait;
+}
+
+#status {
+    min-height: 24px;
+    margin-top: 16px;
+    font-size: 0.95rem;
+}
+
+.weather-result {
+    margin-top: 12px;
+    animation: appear 0.5s ease;
+}
+
+.weather-result[hidden] {
+    display: none;
+}
+
+#cityName {
+    font-size: 1.7rem;
+    overflow-wrap: anywhere;
+}
+
+#weatherIcon {
+    width: 110px;
+    height: 110px;
+}
+
+.description {
+    text-transform: capitalize;
+    font-size: 1.1rem;
+}
+
+.temperature {
+    margin: 10px 0 22px;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.details {
+    display: flex;
+    gap: 14px;
+}
+
+.detail-card {
+    flex: 1;
+    padding: 15px 8px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.detail-card span {
+    font-size: 1.5rem;
+}
+
+.detail-card p {
+    margin: 8px 0;
+    font-size: 0.9rem;
+}
+
+footer {
+    margin-top: 25px;
+    color: #eee;
+    font-size: 0.8rem;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 380px) {
+    .weather-app {
+        padding: 24px 16px;
+    }
+
+    #weatherForm {
+        flex-direction: column;
+    }
+
+    .temperature {
+        font-size: 2.5rem;
+    }
+}
