@@ -35,7 +35,7 @@ async function getWeather(city) {
     const url =
             `https://api.openweathermap.org/data/2.5/weather` +
             `?q=${encodeURIComponent(city)}` +
-            `&appid=${API_KEY}&units=metric`;
+            `&appid=${b26f91716ff7e762dc91075e1f1d5bee}&units=metric`;
 
     const response = await fetch(url);
     if (!response.ok) {
