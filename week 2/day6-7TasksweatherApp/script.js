@@ -1,4 +1,5 @@
-const API_KEY = "https://api.openweathermap.org/data/2.5/weather?q=Delhi&appid={API_KEY}&units=metric";
+const API_KEY = "b26f91716ff7e762dc91075e1f1d5bee"
+const API_URL = "https://api.openweathermap.org/data/2.5/weather";
 
 const weatherForm = document.getElementById("weatherForm");
 const cityInput = document.getElementById("cityInput");
@@ -32,12 +33,12 @@ async function getWeather(city) {
     searchBtn.textContent = "Loading...";
 
  try {
-    const url =
-            `https://api.openweathermap.org/data/2.5/weather` +
-            `?q=${encodeURIComponent(city)}` +
-            `&appid=${b26f91716ff7e762dc91075e1f1d5bee}&units=metric`;
-
-    const response = await fetch(url);
+    const params = new URLSearchParams({
+        q:city,
+        appid:API_KEY,
+        units:"metric"
+    })
+    const response = await fetch(`${API_URL}?${params}`);
     if (!response.ok) {
      if (response.status === 404) {
                 throw new Error("City not found. Check the spelling.");
@@ -57,6 +58,7 @@ async function getWeather(city) {
   );
 }
     const data = await response.json();
+    console.log(data)
     cityName.textContent =
             `${data.name}, ${data.sys.country}`;
     temperature.textContent =
