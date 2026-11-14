@@ -1,0 +1,9 @@
+{
+  "name": "day-5-advanced-routing",
+  "version": "1.0.0",
+  "description": "Week 5 Day 5 - Advanced Routing & API Structuring",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

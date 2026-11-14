@@ -1,0 +1,13 @@
+{
+  "name": "day-2-npm-modular",
+  "version": "1.0.0",
+  "description": "Week 5 Day 2 - npm and Modular Programming",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  }
+}

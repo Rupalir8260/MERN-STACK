@@ -1,0 +1,9 @@
+{
+  "name": "day-3-express-basics",
+  "version": "1.0.0",
+  "description": "Week 5 Day 3 - Getting Started with Express.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  }
+}
