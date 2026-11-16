@@ -1,0 +1,17 @@
+{
+  "name": "product-api",
+  "version": "1.0.0",
+  "description": "Week 5 Day 6-7 Mini Project: Product Management API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
