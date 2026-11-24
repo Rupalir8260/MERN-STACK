@@ -1,0 +1,14 @@
+.Visitors{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+    width: 100%;
+}
+.Visitors{
+    background: rgb(204, 196, 196);
+    border:1px solid #eeeeee1b;
+    border-radius: 10px;
+    padding: 18px 15px;
+    min-height: 130px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0);
+}
